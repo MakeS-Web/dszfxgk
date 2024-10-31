@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My copied worksite</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url(https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?cs=srgb&dl=pexels-jplenio-1103970.jpg&fm=jpg);
+            background-size: 100% 600px;
+            background-repeat: no-repeat;
+        }
+        .menu-img{
+            width: 50px;
+            height: 50px;
+            align-items: center;
+            border-radius: 50px;
+        }
+        .menu-img:hover{
+            cursor: pointer;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .main-name{
+            padding-left: 20px;
+            color: white;
+        }
+        .main-name:hover{
+            cursor: pointer;
+        }
+        .btns-headers{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-right: 100px;
+            gap: 50px;
+        }
+        .menu{
+            padding-right: 50px;
+            color: white;
+        }
+        .btn-header{
+            border: none;
+            background-color: none;
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+        }
+        .btn-header:hover{
+            cursor: pointer;
+            font-size: 20px;
+            text-decoration: underline;
+            transition: 1s;
+        }
+        .phone{
+            display: flex;
+            flex-direction: column;
+        }
+        .companies{
+            display: flex;
+            flex-direction: row;
+            gap: 150px;
+            text-align: center;
+            justify-content: center;
+            color: black;
+            padding-top: 700px;
+        }
+        .companies-logo{
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+        }
+        .hr-first{
+            color: black;
+            border: 1px solid ;
+            width: 90%;
+        }
+        .hr-second{
+            color: black;
+            border: 1px solid ;
+            width: 92%;
+        }
+        .hr-third{
+            color: black;
+            border: 1px solid ;
+            width: 92%;
+        }
+        .hr-fourth{
+            color: black;
+            border: 1px solid ;
+            width: 1600px;
+        }
+        .hr1{
+            display: flex;
+            justify-content: center;
+            padding-top: 100px;
+        }
+        .hr2{
+            display: flex;
+            justify-content: center;
+            padding-top: 100px;
+        }
+        .hr3{
+            display: flex;
+            padding-left: 100px;
+            padding-top: 100px;
+        }
+        .hr4{
+            display: flex;
+            justify-content: center;
+            padding-top: 100px;
+        }
+        .about-logo{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 330px;
+        }
+        .main-text{
+            max-width: 800px;
+            font-size: 20px;
+        }
+        .see{
+            border: 1px solid black;
+            border-radius: 50px;
+            background-color: white;
+            width: 200px;
+            height: 40px;
+        }
+        .see:hover{
+            cursor: pointer;
+        }
+        .view{
+            border: 1px solid black;
+            border-radius: 50px;
+            background-color: white;
+            width: 150px;
+            height: 30px;
+        }
+        .view:hover{
+            cursor: pointer;
+        }
+        .about{
+            border: 1px solid black;
+            border-radius: 50px;
+            background-color: white;
+            width: 200px;
+            height: 40px;
+            margin-left: -60px;
+        }
+        .about:hover{
+            cursor: pointer;
+        }
+        .first-photo{
+            display: flex;
+            flex-direction: column;
+        }
+        .design{
+            width: 480px;
+            height: 480px;
+        }
+        h3{
+            max-width: 300px;
+            font-weight: 100;
+        }
+        .square-photos{
+            display: grid;
+            grid-template-columns: 20px 1fr 1fr 1fr 5%;
+            gap: 50px;
+        }
+        .first-photo{
+            display: grid;
+            grid-column: 2;
+        }
+        .second-photo{
+            display: grid;
+            grid-column: 3;
+        }
+        .third-photo{
+            display: grid;
+            grid-column: 4;
+        }
+        .date{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .dot{
+            width: 30px;
+            height: 30px;
+            padding-right: 60px;
+        }
+        p:nth-of-type(1){
+            padding-left: 80px;
+        }
+        p:nth-of-type(2){
+            padding-right: 400px;
+        }
+        .engagements{
+            padding-left: 60px;
+            font-size: 50px;
+        }
+        .site{
+            display: flex;
+            flex-direction: column;
+            padding-left: 60px;
+        }
+        .gap{
+            margin-top: -30px;
+            padding-left: 5px;
+        }
+        h3{
+            min-width: 300px;
+        }
+        .sites{
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+            flex-wrap: wrap;
+        }
+        .what{
+            font-size: 100px;
+            max-width: 600px;
+            margin-left: -70px;
+        }
+        .street{
+            width: 700px;
+            height: 900px;
+            object-fit: cover;
+            margin-right: -70px;
+            padding-top: 100px;
+        }
+        .what-gives{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        span{
+            font-weight: 900;
+        }
+        .span{
+            margin-left: -140px;
+            margin-top: -70px;
+        }
+        .vtext{
+            font-size: 50px;
+            padding-left: 60px;
+        }
+        .last-text{
+            display: flex;
+            flex-direction: row;
+            gap: 1140px;
+            align-items: center;
+            padding-top: 200px;
+        }
+        .last-img{
+            width: 500px;
+            height: 500px;
+        }
+        .last-words{
+            max-width: 800px;
+            color: black;
+            font-size: 50px;
+        }
+        .object{
+            display: flex;
+            flex-direction: row;
+            padding-left: 45px;
+        }
+        .last{
+            display: flex;
+            flex-direction: column;
+        }
+        .navigation{
+            width: 70px;
+            height: 70px;
+        }
+        .navigate{
+            padding-top: 300px;
+        }
+        .navigate:hover{
+            cursor: pointer;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+        }
+        footer{
+            background-color: black;
+            width: 100%;
+            height: 700px;
+            margin-top: 200px;
+        }
+        .row1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 500px;
+            color: white;
+            padding-top: 100px;
+        }
+        .row1 h1:nth-of-type(2){
+            max-width: 800px;
+            font-weight: 400;
+        }
+        .row1 a:nth-of-type(1){
+            color: white;
+        }
+        .white-dot{
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+        }
+        .columns{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .columns h2{
+            color: white;
+            font-size: 20px;
+        }
+        .row2{
+            display: flex;
+            flex-direction: row;
+            padding-left: 50px;
+        }
+        .row2{
+            gap: 0px;
+        }
+        input{
+            background-color: black;
+            border: 1px white solid;
+            padding-left: 10px;
+            width: 500px;
+            height: 40px;
+        }
+        .object1{
+            display: flex;
+            flex-direction: column;
+            padding-left: 100px;
+        }
+        .object1 a{
+            color: white;
+            text-decoration: none;
+        }
+        .object1 a:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 430px){
+            *{
+            font-family: sans-serif;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url(https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?cs=srgb&dl=pexels-jplenio-1103970.jpg&fm=jpg);
+            background-size: 100% 600px;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+        }
+        .menu-img{
+            width: 20px;
+            height: 20px;
+            align-items: center;
+            border-radius: 50px;
+        }
+        .menu-img:hover{
+            cursor: pointer;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .main-name{
+            padding-left: 20px;
+            color: white;
+        }
+        .main-name:hover{
+            cursor: pointer;
+        }
+        .btns-headers{
+            display: none;
+        }
+        .menu{
+            padding-right: 50px;
+            color: white;
+        }
+        .btn-header{
+            border: none;
+            background-color: none;
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+        }
+        .btn-header:hover{
+            cursor: pointer;
+            font-size: 20px;
+            text-decoration: underline;
+            transition: 1s;
+        }
+        .phone{
+            display: flex;
+            flex-direction: column;
+        }
+        .companies{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            text-align: center;
+            justify-content: center;
+            color: black;
+            padding-top: 700px;
+        }
+        .companies-logo{
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+        }
+        .hr-first{
+            color: black;
+            border: 1px solid ;
+            width: 90%;
+        }
+        .hr-second{
+            color: black;
+            border: 1px solid ;
+            width: 92%;
+        }
+        .hr-third{
+            color: black;
+            border: 1px solid ;
+            width: 92%;
+        }
+        .hr-fourth{
+            color: black;
+            border: 1px solid ;
+            width: 1600px;
+        }
+        .hr1{
+            display: flex;
+            justify-content: center;
+            padding-top: 100px;
+        }
+        .hr2{
+            display: flex;
+            justify-content: center;
+            padding-top: 100px;
+        }
+        .hr3{
+            display: flex;
+            padding-left: 0px;
+            padding-top: 100px;
+        }
+        .hr4{
+            display: flex;
+            justify-content: center;
+            padding-top: 100px;
+        }
+        .about-logo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        .main-text{
+            max-width: 800px;
+            font-size: 10px;
+        }
+        .see{
+            border: 1px solid black;
+            border-radius: 50px;
+            background-color: white;
+            width: 200px;
+            height: 40px;
+        }
+        .see:hover{
+            cursor: pointer;
+        }
+        .big-logo{
+            margin-top: -300px;
+            width: 400px;
+            height: 400px;
+        }
+        .view{
+            border: 1px solid black;
+            border-radius: 50px;
+            background-color: white;
+            width: 150px;
+            height: 30px;
+        }
+        .view:hover{
+            cursor: pointer;
+        }
+        .about{
+            border: 1px solid black;
+            border-radius: 50px;
+            background-color: white;
+            width: 200px;
+            height: 40px;
+            margin-left: 0px;
+        }
+        .about:hover{
+            cursor: pointer;
+        }
+        .first-photo{
+            display: flex;
+            flex-direction: column;
+        }
+        .design{
+            width: 400px;
+            height: 400px;
+        }
+        h3{
+            max-width: 300px;
+            font-weight: 100;
+        }
+        .square-photos{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .first-photo{
+            display: grid;
+            grid-column: 2;
+        }
+        .second-photo{
+            display: grid;
+            grid-column: 3;
+        }
+        .third-photo{
+            display: grid;
+            grid-column: 4;
+        }
+        .date{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .dot{
+            width: 30px;
+            height: 30px;
+            margin-left: -160px;
+        }
+        p:nth-of-type(1){
+            padding-left: 80px;
+        }
+        p:nth-of-type(2){
+            padding-right: 400px;
+        }
+        .engagements{
+            padding-left: 0px;
+            font-size: 50px;
+        }
+        .site{
+            display: flex;
+            flex-direction: column;
+            padding-left: 60px;
+        }
+        .gap{
+            margin-top: -30px;
+            padding-left: 5px;
+        }
+        h3{
+            min-width: 300px;
+        }
+        .sites{
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+            flex-wrap: wrap;
+        }
+        .what{
+            font-size: 50px;
+            max-width: 400px;
+            margin-left: 0px;
+        }
+        .street{
+            width: 400px;
+            height: 600px;
+            object-fit: cover;
+            padding-top: 100px;
+            margin-left: -80px;
+        }
+        .what-gives{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        span{
+            font-weight: 900;
+        }
+        .span{
+            margin-left: -70px;
+            margin-top: 0px;
+        }
+        .vtext{
+            font-size: 50px;
+            padding-left: 60px;
+        }
+        .last-text{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            padding-top: 200px;
+        }
+        .last-img{
+            width: 400px;
+            height: 400px;
+        }
+        .last-words{
+            max-width: 400px;
+            color: black;
+            font-size: 30px;
+        }
+        .object{
+            display: flex;
+            flex-direction: column;
+            margin-left: -40px;
+        }
+        .last{
+            display: flex;
+            flex-direction: column;
+        }
+        .navigation{
+            width: 70px;
+            height: 70px;
+        }
+        .navigate{
+            padding-top: 30px;
+        }
+        .navigate:hover{
+            cursor: pointer;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+        }
+        footer{
+            background-color: black;
+            width: 100%;
+            height: 1200px;
+            margin-top: 200px;
+        }
+        .row1{
+            display: flex;
+            flex-direction: column;
+            color: white;
+            padding-top: 100px;
+        }
+        .row1 h1:nth-of-type(2){
+            margin-top: -400px;
+            max-width: 400px;
+            font-weight: 400;
+        }
+        .row1 a:nth-of-type(1){
+            color: white;
+        }
+        .white-dot{
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+        }
+        .columns{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .columns h2{
+            color: white;
+            font-size: 20px;
+        }
+        .row2{
+            display: flex;
+            flex-direction: column;
+            padding-left: 0px;
+        }
+        .row2{
+            gap: 0px;
+        }
+        input{
+            background-color: black;
+            border: 1px white solid;
+            padding-left: 10px;
+            width: 350px;
+            height: 40px;
+        }
+        .object1{
+            display: flex;
+            flex-direction: column;
+            padding-left: 0px;
+        }
+        .object1 a{
+            color: white;
+            text-decoration: none;
+        }
+        .object1 a:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main-name">
+            <h1>Basic/Dept®</h1>
+        </div>
+        <div class="btns-headers">
+        <a href="#" class="btn-header">WORK</a>
+        <a href="#" class="btn-header">ABOUT</a>
+        <a href="#" class="btn-header">NEWS</a>
+        <a href="#" class="btn-header">THINKING</a>
+        <a href="#" class="btn-header">CAREERS</a>
+        <a href="#" class="btn-header">CONTACT</a>
+        </div>
+        <div class="menu"><img class="menu-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPZOU8akn72Ra0qqKyedCKjHO83PF2K9-tYbkulAXgWy6z0R3BMtl3IWx-faPMknU2dOg&usqp=CAU" alt="photo"></div>
+    </header>
+    <div class="companies">
+        <div class="phone">
+            <img class="companies-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHW60mfFBW8d50FRJJPLFtERqQwMuLladciQ&s" alt="photo">
+            <h2>Apple Company</h2>
+        </div>
+        <div class="phone">
+            <img class="companies-logo" src="https://www.hatchwise.com/wp-content/uploads/2022/10/image-9.png" alt="photo">
+            <h2>Samsung Company</h2>
+        </div>
+        <div class="phone">
+            <img class="companies-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLASeG5Xtz_9uHDtuTpgSTs2x2K13Wia59zw&s" alt="photo">
+            <h2>Tesla Company</h2>
+        </div>
+    </div>
+    <div class="hr1"><hr class="hr-first"></div>
+    <div class="about-logo">
+        <div class="main-text">
+            <h1>BASIC/DEPT® is a global branding and digital design agency building products, services, and eCommerce experiences that turn cultural values into company value.</h1>
+            <button class="see">SEE THE WORK</button>
+        </div>
+        <div class="big-logo">
+            <img src="https://pbs.twimg.com/profile_images/1022271761579040768/gbLcWUk__400x400.jpg" alt="photo">
+        </div>
+    </div>
+    <div class="square-photos">
+        <div class="first-photo">
+            <img class="design" src="https://static.dezeen.com/uploads/2024/09/sq-huawei-mate-xt-trifold-phone_dezeen_2364_col_0-411x411.jpg" alt="photo">
+            <h1>Flipping</h1>
+            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
+        </div>
+        <div class="second-photo">
+            <img class="design" src="https://i.pinimg.com/736x/10/2c/5f/102c5fdd18b94b3581037cb8ce7d3a1a.jpg" alt="photo">
+            <h1>Modern one</h1>
+            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
+        </div>
+        <div class="third-photo">
+            <img class="design" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlK10uKa87QD_8F1L8L_3Ysvu2nQhRoNenxQ&s" alt="photo">
+            <h1>Deathess</h1>
+            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
+        </div>
+    </div>
+    <div class="hr2"><hr class="hr-second"></div>
+    <div class="date">
+        <p>00</p>
+        <p>/05</p>
+        <img class="dot" src="https://www.svgrepo.com/show/353085/dot-single.svg" alt="photo">
+    </div>
+    <h1 class="engagements">FEATURED<br> ENGAGEMENTS</h1>
+    <div class="sites">
+        <div class="site">
+            <h1>Google</h1>
+            <h1 class="gap">_</h1>
+            <h2>Google</h2>
+            <h3>Our embedded partnership with Google is as deep as it gets. We’re the lead creative agency for Google Store and provide strategy, design, and prototyping to other divisions. Learn more about our partnership </h3>
+        </div>
+        <div class="site">
+            <h1>KFC</h1>
+            <h1 class="gap">_</h1>
+            <h2>KFC</h2>
+            <h3>An award-winning global, digital transformation engagement spanning eCommerce, mobile app, and new drive thru experiences. Bringing KFC’s brand story to life while making it easier for customers to buy chicken. Learn more about our partnership </h3>
+        </div>
+        <div class="site">
+            <h1>Wilson</h1>
+            <h1 class="gap">_</h1>
+            <h2>Wilson</h2>
+            <h3>A reimagining of Wilson’s brand visual identity, and brand campaign, to support a new product drop and the launch of the first brick and mortar retail location in the brand’s 108-year history. Read our full case study </h3>
+        </div>
+        <div class="site">
+            <h1>AT&T</h1>
+            <h1 class="gap">_</h1>
+            <h2>AT&T</h2>
+            <h3>Redesigning the digital flagship for the largest telecommunications company in the world. Creating frictionless paths to purchase for a wide range of consumers across a vast portfolio of products and services.</h3>
+        </div>
+        <div class="site">
+            <h1>patagonia</h1>
+            <h1 class="gap">_</h1>
+            <h2>Patagonia</h2>
+            <h3>Ongoing partnership providing strategy, branding, experience design, and development focused on bringing their mission and offerings to consumers through brand-led programs and platforms. Read our full case study </h3>
+        </div>
+    </div>
+    <div class="hr3"><hr class="hr-third"></div>
+    <div class="what-gives">
+        <div class="left">
+            <h1 class="what">BASIC/DEPT® HELPS BRANDS ● CONNECT W/ CULTURE</h1>
+            <p class="span">Adweek <span>Agency Spotlight</span></p>
+            <button class="about">ABOUT US</button>
+        </div>
+        <div class="right">
+            <img class="street" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-MSAdfD34Cuw8EudLptafZfEjvyNXj0YrXw&s" alt="photo">
+        </div>
+    </div>
+    <div class="last-text">
+        <h1 class="vtext">FEATURED<BR> NEWS</h1>
+        <button class="view">VIEW ALL</button>
+    </div>
+    <div class="hr4"><hr class="hr-fourth"></div>
+    <div class="last">
+        <div class="object">
+            <div class="box">
+                <img class="last-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwlLL0DIfFERJ67FLuHYoZfINXMfecIdeOyA&s" alt="photo">
+        <a class="last-words" href="#">No longer the affordable option, QSRs look to connect with culture</a>
+            </div>
+            <div class="navigate">
+                <img class="navigation" src="https://cdn.icon-icons.com/icons2/2596/PNG/512/arrow_right_icon_155791.png" alt="photo">
+            </div>
+        </div>
+        <div class="hr4"><hr class="hr-fourth"></div>
+        <div class="object">
+            <div class="box">
+                <img class="last-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwlLL0DIfFERJ67FLuHYoZfINXMfecIdeOyA&s" alt="photo">
+        <a class="last-words" href="#">No longer the affordable option, QSRs look to connect with culture</a>
+            </div>
+            <div class="navigate">
+                <img class="navigation" src="https://cdn.icon-icons.com/icons2/2596/PNG/512/arrow_right_icon_155791.png" alt="photo">
+            </div>
+        </div>
+        <div class="hr4"><hr class="hr-fourth"></div>
+        <div class="object">
+            <div class="box">
+                <img class="last-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwlLL0DIfFERJ67FLuHYoZfINXMfecIdeOyA&s" alt="photo">
+        <a class="last-words" href="#">No longer the affordable option, QSRs look to connect with culture</a>
+            </div>
+            <div class="navigate">
+                <img class="navigation" src="https://cdn.icon-icons.com/icons2/2596/PNG/512/arrow_right_icon_155791.png" alt="photo">
+            </div>
+        </div>
+        <div class="hr4"><hr class="hr-fourth"></div>
+        <div class="object">
+            <div class="box">
+                <img class="last-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwlLL0DIfFERJ67FLuHYoZfINXMfecIdeOyA&s" alt="photo">
+        <a class="last-words" href="#">No longer the affordable option, QSRs look to connect with culture</a>
+            </div>
+            <div class="navigate">
+                <img class="navigation" src="https://cdn.icon-icons.com/icons2/2596/PNG/512/arrow_right_icon_155791.png" alt="photo">
+            </div>
+        </div>
+        <div class="hr4"><hr class="hr-fourth"></div>
+        <div class="object">
+            <div class="box">
+                <img class="last-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwlLL0DIfFERJ67FLuHYoZfINXMfecIdeOyA&s" alt="photo">
+        <a class="last-words" href="#">No longer the affordable option, QSRs look to connect with culture</a>
+            </div>
+            <div class="navigate">
+                <img class="navigation" src="https://cdn.icon-icons.com/icons2/2596/PNG/512/arrow_right_icon_155791.png" alt="photo">
+            </div>
+        </div>
+        <div class="hr4"><hr class="hr-fourth"></div><div class="object">
+            <div class="box">
+                <img class="last-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwlLL0DIfFERJ67FLuHYoZfINXMfecIdeOyA&s" alt="photo">
+        <a class="last-words" href="#">No longer the affordable option, QSRs look to connect with culture</a>
+            </div>
+            <div class="navigate">
+                <img class="navigation" src="https://cdn.icon-icons.com/icons2/2596/PNG/512/arrow_right_icon_155791.png" alt="photo">
+            </div>
+        </div>
+        <div class="hr4"><hr class="hr-fourth"></div>
+        <div class="object">
+            <div class="box">
+                <img class="last-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwlLL0DIfFERJ67FLuHYoZfINXMfecIdeOyA&s" alt="photo">
+        <a class="last-words" href="#">No longer the affordable option, QSRs look to connect with culture</a>
+            </div>
+            <div class="navigate">
+                <img class="navigation" src="https://cdn.icon-icons.com/icons2/2596/PNG/512/arrow_right_icon_155791.png" alt="photo">
+            </div>
+        </div>
+        <div class="hr4"><hr class="hr-fourth"></div>
+        <div class="object">
+            <div class="box">
+                <img class="last-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwlLL0DIfFERJ67FLuHYoZfINXMfecIdeOyA&s" alt="photo">
+        <a class="last-words" href="#">No longer the affordable option, QSRs look to connect with culture</a>
+            </div>
+            <div class="navigate">
+                <img class="navigation" src="https://cdn.icon-icons.com/icons2/2596/PNG/512/arrow_right_icon_155791.png" alt="photo">
+            </div>
+        </div>
+        <div class="hr4"><hr class="hr-fourth"></div>
+        <div class="object">
+            <div class="box">
+                <img class="last-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwlLL0DIfFERJ67FLuHYoZfINXMfecIdeOyA&s" alt="photo">
+        <a class="last-words" href="#">No longer the affordable option, QSRs look to connect with culture</a>
+            </div>
+            <div class="navigate">
+                <img class="navigation" src="https://cdn.icon-icons.com/icons2/2596/PNG/512/arrow_right_icon_155791.png" alt="photo">
+            </div>
+        </div>
+        <div class="hr4"><hr class="hr-fourth"></div>
+        <div class="object">
+            <div class="box">
+                <img class="last-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwlLL0DIfFERJ67FLuHYoZfINXMfecIdeOyA&s" alt="photo">
+        <a class="last-words" href="#">No longer the affordable option, QSRs look to connect with culture</a>
+            </div>
+            <div class="navigate">
+                <img class="navigation" src="https://cdn.icon-icons.com/icons2/2596/PNG/512/arrow_right_icon_155791.png" alt="photo">
+            </div>
+        </div>
+        <div class="hr4"><hr class="hr-fourth"></div>
+        <div class="object">
+            <div class="box">
+                <img class="last-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwlLL0DIfFERJ67FLuHYoZfINXMfecIdeOyA&s" alt="photo">
+        <a class="last-words" href="#">No longer the affordable option, QSRs look to connect with culture</a>
+            </div>
+            <div class="navigate">
+                <img class="navigation" src="https://cdn.icon-icons.com/icons2/2596/PNG/512/arrow_right_icon_155791.png" alt="photo">
+            </div>
+        </div>
+        <div class="hr4"><hr class="hr-fourth"></div>
+        <div class="object">
+            <div class="box">
+                <img class="last-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwlLL0DIfFERJ67FLuHYoZfINXMfecIdeOyA&s" alt="photo">
+        <a class="last-words" href="#">No longer the affordable option, QSRs look to connect with culture</a>
+            </div>
+            <div class="navigate">
+                <img class="navigation" src="https://cdn.icon-icons.com/icons2/2596/PNG/512/arrow_right_icon_155791.png" alt="photo">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row1">
+            <h1>B/D®</h1>
+            <h1>We collaborate with ambitious brands and people. Let's build.<a href="#">biz@basicagency.com</a></h1>
+        </div>
+        <div class="row2">
+            <div class="object1">
+                <div class="columns">
+                    <img class="white-dot" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ-NSKUfgDVT2JWx9t8SZHhryD7xtWws5qXw&s" alt="photo">
+                    <h2>STAY IN THE KNOW</h2>
+                </div>
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="object1">
+                <div class="columns">
+                    <img class="white-dot" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ-NSKUfgDVT2JWx9t8SZHhryD7xtWws5qXw&s" alt="photo">
+                    <h2>SOSIAL</h2>
+                </div>
+                    <a href="#">Instagram</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Instagram</a>
+            </div>
+            <div class="object1">
+                <div class="columns">
+                    <img class="white-dot" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ-NSKUfgDVT2JWx9t8SZHhryD7xtWws5qXw&s" alt="photo">
+                    <h2>INITIATIVES</h2>
+                </div>
+                    <a href="#">Instagram</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Instagram</a>
+            </div>
+            <div class="object1">
+                <div class="columns">
+                    <img class="white-dot" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ-NSKUfgDVT2JWx9t8SZHhryD7xtWws5qXw&s" alt="photo">
+                    <h2>OFFCES</h2>
+                </div>
+                    <a href="#">Instagram</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
